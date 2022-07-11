@@ -10,11 +10,13 @@ const listaSpesa = ['pomodori',
                     'olive'
 ]
 
+const listaspesaDom = document.getElementById ('listaspesa')
+
 let i = 0;
 
 while (i < listaSpesa.length ) {
 
-    console.log (listaSpesa[i]);
+    listaspesaDom.innerHTML += `<li>${listaSpesa[i]}</li>`;
 
 
     i++;
